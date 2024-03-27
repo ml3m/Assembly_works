@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    int fact = 1, n = 5;
+    int fact = 1, n = 10;
     while (n > 1) {
         int temp = fact; // Store the current value of fact
         for (int i = 1; i < n; i++) {
