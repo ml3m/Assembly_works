@@ -5,7 +5,7 @@ LD = gcc
 ASFLAGS = -f elf64
 LDFLAGS =
 
-SRC = random.asm
+SRC = bubble_sort.asm
 OBJ = $(SRC:.asm=.o)
 EXE = main
 

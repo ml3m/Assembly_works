@@ -6,7 +6,7 @@ nums  db 3,7,9,1,8,2,4,5,3,6,10
 count equ 9                       
 
 .code
-.start
+.startup
     mov dx, count
 oloop:
     mov cx, count
@@ -14,10 +14,10 @@ oloop:
 iloop:
     mov al, [si]                
     cmp al, [si+1]
-    jl smaller 
+    jl common                     
     xchg al, [si+1]         ; xchg e swap
     mov [si], al 
-smaller:
+common:
     inc si
     loop iloop
         dec dx
